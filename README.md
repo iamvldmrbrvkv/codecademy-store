@@ -11,8 +11,8 @@ This application has three slices of state:
 - currencyFilter: A string that represents the currency used to calculate the prices displayed to the user: 'USD', 'CAD' or 'EUR'.
 
 An example of this application’s state might look like this:
-
-`state = {
+```js
+state = {
   inventory: [
     { name: 'Hat', img: 'img/hat.png', price: 15.99 },
     { name: 'T-Shirt', img: 'img/t-shirt.png', price: 18.99 },
@@ -24,8 +24,8 @@ An example of this application’s state might look like this:
     'Hoodie': { price: 18.99, quantity: 1 },
   },
   currencyFilter: 'CAD'
-}`
-
+}
+```
 As you will see, the file structure has been organized using the recommended feature-based pattern and most of the inventory and currency features have been built for you. It will be up to you to:
 
 - complete the cart’s action creators and reducer logic
@@ -52,13 +52,15 @@ Below the addItem() function:
 - The payload should be an object with a .name and .newQuantity property.
 - Export this function.
 
-2. `// Example cart state
+2.
+```js
+// Example cart state
 cart = {
   'Hat': { price: 15.99, quantity: 0 },
   'T-Shirt': { price: 15.99, quantity: 2 },
   'Hoodie': { price: 18.99, quantity: 1 },
-},`
-
+},
+```
 Great! Now that you know what changeItemQuantity() actions will look like, you can handle them in the cartReducer(). A case for this action type has already been started for you. It first pulls out the name and newQuantity from the payload and grabs the itemToUpdate from the cart.
 
 The first step is to update this item — but you must do it immutably! Below the variable itemToUpdate…
