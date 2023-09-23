@@ -1,4 +1,4 @@
-## codecademy-store
+# codecademy-store
 [Codecademy's](https://www.codecademy.com/learn) JavaScript project using [React](https://react.dev/) and [Redux](https://redux.js.org/).
 
 ## Codecademy Store
